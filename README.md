@@ -8,30 +8,42 @@ A node.js name generator.
 ##Installation
 
 ```
-$ npm install adam
+$ npm install node-eden
 ```
 
 ##Usage
 
 ```javascript
-var adam = require('adam'),
-  name1 = adam.name(),       // name1 is now a single word, for example: "fox"
-  name2 = adam.name(2),      // name2 is now two words combined: "toadbird"
-  name3 = adam.name(3, '-'); // name3 is now three words separated by -: "owl-hen-cow"
+var eden = require('eden'),
+  word = eden.word(), // word is now "fox" or some other word from the list
+  him = eden.adam(),  // him is now a male first name e.g., "Aaron"
+  her = eden.eve();   // her is now a female first name e.g., "Anna"
 ```
 
 ##Methods
 
-###name( [count=1], [delimeter=''] )
+The module provides 3 methods, each randomly picking a unique word from a different list.
 
-Generate a word, or words, separated by `delimeter`. Each word will be unique, until the word list is exhausted.
-There are ~45K words in the list, see `lib/words.js`.
+###name()
+
+Get a unique word from the list of ~45K words, see `lib/words.js`. Each word will be randomly chosen, and unique
+until the list is exhausted, then it will start again.
+
+###adam()
+
+Get a unique male first name the list of ~4K male names, see `lib/male-names.js`. Each name will be randomly chosen, and unique
+until the list is exhausted, then it will start again.
+
+###eve()
+
+Get a unique female name from the list of ~5K female names, see `lib/female-names.js`. Each name will be randomly chosen, and unique
+until the list is exhausted, then it will start again.
 
 ##License
 
-###Word List
+###Word Lists
 
-See `aaREADME.txt` for information about the word lists used in this module, which are modified versions of the
+See `lib/aaREADME.txt` for information about the word lists used in this module, which are modified versions of the
 files found in http://www.gutenberg.org/ebooks/3201.
 
 ###Source Code
