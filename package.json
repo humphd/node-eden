@@ -1,0 +1,21 @@
+{
+  "name": "node-eden",
+  "version": "0.0.3",
+  "author": "David Humphrey <david.humphrey@senecacollege.ca>",
+  "keywords": [
+    "name",
+    "unique",
+    "male",
+    "female"
+  ],
+  "main": "./lib/index.js",
+  "description": "A node.js name generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/humphd/node-eden.git"
+  },
+  "license": {
+    "type": "Apache",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }
+}
