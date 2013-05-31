@@ -24,7 +24,7 @@ var eden = require('eden'),
 
 The module provides 3 methods, each randomly picking a unique word from a different list.
 
-###name()
+###word()
 
 Get a unique word from the list of ~45K words, see `lib/words.js`. Each word will be randomly chosen, and unique
 until the list is exhausted, then it will start again.
